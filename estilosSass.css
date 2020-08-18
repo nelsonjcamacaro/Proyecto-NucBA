@@ -16,9 +16,15 @@ header {
 header h1 {
   text-align: center;
   margin-top: 30px;
+  display: none;
 }
 
-header ul {
+header nav {
+  display: none;
+}
+
+header nav ul {
+  display: none;
   margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,7 +38,7 @@ header ul {
   font-size: 20px;
 }
 
-header ul li {
+header nav ul li {
   padding: 15px;
 }
 
