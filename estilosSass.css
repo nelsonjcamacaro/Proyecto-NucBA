@@ -1,9 +1,39 @@
 header {
-  background: -webkit-gradient(linear, left top, right top, color-stop(2%, rgba(255, 252, 0, 0.857878)), color-stop(26%, rgba(255, 59, 0, 0.925105)), color-stop(71%, rgba(0, 0, 0, 0.93)));
-  background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 2%, rgba(255, 59, 0, 0.925105) 26%, rgba(0, 0, 0, 0.93) 71%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: -webkit-gradient(linear, left top, right top, color-stop(2%, rgba(255, 252, 0, 0.857878)), color-stop(26%, rgba(255, 59, 0, 0.925105)), color-stop(71%, rgba(18, 18, 18, 0.93)));
+  background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 2%, rgba(255, 59, 0, 0.925105) 26%, rgba(18, 18, 18, 0.93) 71%);
   color: white;
-  -webkit-box-shadow: 10px -6px 20px 4px red;
-          box-shadow: 10px -6px 20px 4px red;
+  -webkit-box-shadow: 0px 0px 8px 4px red;
+          box-shadow: 0px 0px 8px 4px red;
+}
+
+header ul {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  -webkit-box-align: rigth;
+      -ms-flex-align: rigth;
+          align-items: rigth;
+  font-size: 20px;
+}
+
+header ul li {
+  padding: 15px;
+}
+
+header .logoPrincipal {
+  height: 150px;
+  width: 230px;
+  border-radius: 50px;
 }
 
 * {
@@ -28,6 +58,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 10px;
 }
 
 .imagenPrincipal h2 {
@@ -125,18 +156,20 @@ h3 {
 }
 
 footer {
-  background: -webkit-gradient(linear, left top, right top, color-stop(2%, rgba(255, 252, 0, 0.857878)), color-stop(26%, rgba(255, 59, 0, 0.925105)), color-stop(71%, rgba(0, 0, 0, 0.93)));
-  background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 2%, rgba(255, 59, 0, 0.925105) 26%, rgba(0, 0, 0, 0.93) 71%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(2%, rgba(255, 252, 0, 0.857878)), color-stop(26%, rgba(255, 59, 0, 0.925105)), color-stop(71%, rgba(18, 18, 18, 0.93)));
+  background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 2%, rgba(255, 59, 0, 0.925105) 26%, rgba(18, 18, 18, 0.93) 71%);
   height: 100px;
+  -webkit-box-shadow: 10px -6px 20px 4px red;
+          box-shadow: 10px -6px 20px 4px red;
 }
 
 @media (min-width: 768px) {
   header {
-    background: -webkit-gradient(linear, left top, right top, color-stop(2%, rgba(255, 252, 0, 0.857878)), color-stop(26%, rgba(255, 59, 0, 0.925105)), color-stop(71%, rgba(0, 0, 0, 0.93)));
-    background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 2%, rgba(255, 59, 0, 0.925105) 26%, rgba(0, 0, 0, 0.93) 71%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(2%, rgba(255, 252, 0, 0.857878)), color-stop(26%, rgba(255, 59, 0, 0.925105)), color-stop(71%, rgba(18, 18, 18, 0.93)));
+    background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 2%, rgba(255, 59, 0, 0.925105) 26%, rgba(18, 18, 18, 0.93) 71%);
     color: white;
-    -webkit-box-shadow: 10px -6px 20px 4px red;
-            box-shadow: 10px -6px 20px 4px red;
+    -webkit-box-shadow: 0px 0px 8px 4px red;
+            box-shadow: 0px 0px 8px 4px red;
   }
   * {
     margin: 0;
@@ -231,13 +264,12 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-
-footer {
-  background: -webkit-gradient(linear, left top, right top, color-stop(2%, rgba(255, 252, 0, 0.857878)), color-stop(26%, rgba(255, 59, 0, 0.925105)), color-stop(71%, rgba(0, 0, 0, 0.93)));
-  background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 2%, rgba(255, 59, 0, 0.925105) 26%, rgba(0, 0, 0, 0.93) 71%);
-  height: 100px;
-  -webkit-box-shadow: 10px -6px 20px 4px red;
-          box-shadow: 10px -6px 20px 4px red;
+  .artistas footer {
+    background: -webkit-gradient(linear, left top, right top, color-stop(2%, rgba(255, 252, 0, 0.857878)), color-stop(26%, rgba(255, 59, 0, 0.925105)), color-stop(71%, rgba(18, 18, 18, 0.93)));
+    background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 2%, rgba(255, 59, 0, 0.925105) 26%, rgba(18, 18, 18, 0.93) 71%);
+    height: 100px;
+    -webkit-box-shadow: 10px -6px 20px 4px red;
+            box-shadow: 10px -6px 20px 4px red;
+  }
 }
 /*# sourceMappingURL=estilosSass.css.map */

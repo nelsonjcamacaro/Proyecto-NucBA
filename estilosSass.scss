@@ -1,4 +1,4 @@
-$colorHeaderAndFooter: linear-gradient(90deg, rgba(255,252,0,0.8578781854538691) 2%, rgba(255,59,0,0.9251050762101716) 26%, rgba(0,0,0,0.93) 71%);
+$colorHeaderAndFooter: linear-gradient(90deg, rgba(255,252,0,0.8578781854538691) 2%, rgba(255,59,0,0.9251050762101716) 26%, rgba(18,18,18,0.93) 71%);
 //linear-gradient(90deg, rgba(255,252,0,0.8578781854538691) 3%, rgba(255,110,0,1) 37%, rgba(0,0,0,0.93) 71%)
 $colorDeLetra: white;
 $colorBody:black;
@@ -8,9 +8,29 @@ $fontType2: 'Orbitron', sans-serif;
 //mobile first//
 
 header{
+    display: flex;
+    justify-content: space-between;
     background: $colorHeaderAndFooter;
     color: $colorDeLetra;
-    box-shadow: 10px -6px 20px 4px red;}
+    box-shadow: 0px 0px 8px 4px red;
+        ul{
+            margin-top: 120px;
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            align-items: rigth;
+            font-size: 20px;
+                li{
+                    padding: 15px;
+                }
+
+        }
+        .logoPrincipal{
+            height: 150px;
+            width: 230px;
+            border-radius: 50px;
+        }
+}
 
 *{
     margin: 0;
@@ -30,6 +50,7 @@ body{
     background-repeat: no-repeat;
     text-align: center;
     justify-content: center;
+    margin-top: 10px;
         h2{
             margin-top: 50px;
             font-size: 30px;
@@ -99,13 +120,14 @@ h3{
 footer{
     background: $colorHeaderAndFooter;
     height: 100px;
+    box-shadow: 10px -6px 20px 4px red;
 }
 
 @media (min-width: 768px){
     header{
         background: $colorHeaderAndFooter;
         color: $colorDeLetra;
-        box-shadow: 10px -6px 20px 4px red;
+        box-shadow: 0px 0px 8px 4px red;
     }
     
     *{
@@ -178,11 +200,11 @@ footer{
                 height: 250px;
                 justify-content: center;
             }
+    footer{
+            background: $colorHeaderAndFooter;
+            height: 100px;
+            box-shadow: 10px -6px 20px 4px red;
+        }
     }
 }
 
-footer{
-    background: $colorHeaderAndFooter;
-    height: 100px;
-    box-shadow: 10px -6px 20px 4px red;
-}
