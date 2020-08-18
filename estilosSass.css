@@ -1,7 +1,9 @@
 header {
-  background: -webkit-gradient(linear, left top, right top, color-stop(3%, rgba(255, 252, 0, 0.857878)), color-stop(37%, #ff6e00), color-stop(71%, rgba(0, 0, 0, 0.93)));
-  background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 3%, #ff6e00 37%, rgba(0, 0, 0, 0.93) 71%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(2%, rgba(255, 252, 0, 0.857878)), color-stop(26%, rgba(255, 59, 0, 0.925105)), color-stop(71%, rgba(0, 0, 0, 0.93)));
+  background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 2%, rgba(255, 59, 0, 0.925105) 26%, rgba(0, 0, 0, 0.93) 71%);
   color: white;
+  -webkit-box-shadow: 10px -6px 20px 4px red;
+          box-shadow: 10px -6px 20px 4px red;
 }
 
 * {
@@ -19,7 +21,7 @@ body {
   display: flex;
   color: white;
   background-image: url("/imagenes/Fire.jpg");
-  height: 100px;
+  height: 150px;
   width: 100%;
   background-repeat: no-repeat;
   text-align: center;
@@ -29,16 +31,18 @@ body {
 }
 
 .imagenPrincipal h2 {
-  margin-top: 40px;
-  font-size: 20px;
+  margin-top: 50px;
+  font-size: 30px;
+  text-shadow: black solid 100px 10px 10px 10px;
 }
 
 h3 {
   color: white;
   height: 50px;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .artistas {
@@ -50,8 +54,9 @@ h3 {
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
   color: white;
-  gap: 10px;
+  gap: 5px;
   text-align: center;
+  font-size: 30px;
 }
 
 .artistas .artista1 {
@@ -63,12 +68,11 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("/imagenes/metallica2.jpg");
   /**background-size: 200px;**/
 }
 
 .artistas .artista1 .imgMet {
-  height: 100%;
+  height: 180px;
   width: 100%;
 }
 
@@ -83,6 +87,11 @@ h3 {
           justify-content: center;
 }
 
+.artistas .artista2 .imgSoad {
+  height: 150px;
+  width: 100%;
+}
+
 .artistas .artista3 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 6;
@@ -92,6 +101,11 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.artistas .artista3 .imgNir {
+  height: 150px;
+  width: 100%;
 }
 
 .artistas .artista4 {
@@ -105,16 +119,21 @@ h3 {
           justify-content: center;
 }
 
+.artistas .artista4 .imgGuns {
+  height: 150px;
+  width: 100%;
+}
+
 footer {
-  background: -webkit-gradient(linear, left top, right top, color-stop(3%, rgba(255, 252, 0, 0.857878)), color-stop(37%, #ff6e00), color-stop(71%, rgba(0, 0, 0, 0.93)));
-  background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 3%, #ff6e00 37%, rgba(0, 0, 0, 0.93) 71%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(2%, rgba(255, 252, 0, 0.857878)), color-stop(26%, rgba(255, 59, 0, 0.925105)), color-stop(71%, rgba(0, 0, 0, 0.93)));
+  background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 2%, rgba(255, 59, 0, 0.925105) 26%, rgba(0, 0, 0, 0.93) 71%);
   height: 100px;
 }
 
 @media (min-width: 768px) {
   header {
-    background: -webkit-gradient(linear, left top, right top, color-stop(3%, rgba(255, 252, 0, 0.857878)), color-stop(37%, #ff6e00), color-stop(71%, rgba(0, 0, 0, 0.93)));
-    background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 3%, #ff6e00 37%, rgba(0, 0, 0, 0.93) 71%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(2%, rgba(255, 252, 0, 0.857878)), color-stop(26%, rgba(255, 59, 0, 0.925105)), color-stop(71%, rgba(0, 0, 0, 0.93)));
+    background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 2%, rgba(255, 59, 0, 0.925105) 26%, rgba(0, 0, 0, 0.93) 71%);
     color: white;
     -webkit-box-shadow: 10px -6px 20px 4px red;
             box-shadow: 10px -6px 20px 4px red;
@@ -215,8 +234,8 @@ footer {
 }
 
 footer {
-  background: -webkit-gradient(linear, left top, right top, color-stop(3%, rgba(255, 252, 0, 0.857878)), color-stop(37%, #ff6e00), color-stop(71%, rgba(0, 0, 0, 0.93)));
-  background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 3%, #ff6e00 37%, rgba(0, 0, 0, 0.93) 71%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(2%, rgba(255, 252, 0, 0.857878)), color-stop(26%, rgba(255, 59, 0, 0.925105)), color-stop(71%, rgba(0, 0, 0, 0.93)));
+  background: linear-gradient(90deg, rgba(255, 252, 0, 0.857878) 2%, rgba(255, 59, 0, 0.925105) 26%, rgba(0, 0, 0, 0.93) 71%);
   height: 100px;
   -webkit-box-shadow: 10px -6px 20px 4px red;
           box-shadow: 10px -6px 20px 4px red;
